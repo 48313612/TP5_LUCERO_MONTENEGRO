@@ -15,3 +15,70 @@ con mi gravedad extrema y voraz,
 soy un enigma del universo sin fin?
 
 */
+@font-face {
+    font-family: 'Space Rave';
+    src: url(fonts/Space\ Rave.ttf);
+}
+
+@font-face {
+    font-family: 'Designer';
+    src: url(fonts/Designer.otf);
+}
+
+@font-face {
+    font-family: 'Creato';
+    src: url(fonts/CreatoDisplay-ExtraBold.otf);
+}
+
+*{
+    margin: 1%;
+}
+
+h1{
+    font-family: 'Space Rave';
+    font-size: 80px;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Designer';
+    font-size: 60px;
+    text-align: center;
+}
+
+img{
+    width: 40%;
+    height: auto;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+    
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #8758ffff;
+    padding: 1%;
+  }
+  
+  li {
+    float: left;
+    
+  }
+  
+  li a {
+    font-style: none;
+    display: block;
+    color: #a3ffd6ff;
+    text-align: center;
+    padding: 14px 16px;
+  }
