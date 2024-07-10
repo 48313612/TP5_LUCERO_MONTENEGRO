@@ -1,17 +1,18 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
-
+<section class = "body">
 <img src = "img/header.png">
 <h1>Bienvenidos a Rescate Galáctico: Misión Vega</h1>
-<h2> ¡Prepárate para un viaje interestelar lleno de desafíos!" </h2>
+<h2> ¡Prepárate para un viaje interestelar lleno de desafíos! </h2>
+<nav>
 <ul>
   <li><a class = "active" href='@Url.Action("Index", "Home")'>Home</a></li>
   <li><a href='@Url.Action("Tutorial", "Home")'>Tutorial</a></li>
   <li><a href='@Url.Action("Juego", "Home")'>Inicio del juego</a></li>
   <li><a href='@Url.Action("Créditos", "Home")'>Créditos</a></li>
 </ul>
-
+</nav>
 <div id="carouselExampleIndicators" class="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -39,4 +40,4 @@
   </button>
 </div>
 
-</div>
+</section>
