@@ -30,25 +30,21 @@ soy un enigma del universo sin fin?
     src: url(fonts/CreatoDisplay-ExtraBold.otf);
 }
 
-*{
-    margin: 1%;
-    
+.body, footer{
+    background-color: #98bae7ff;
 }
-
-.body {
-    background-color: #98bae7ff;;
-}
-
 h1{
     font-family: 'Space Rave', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 100px;
     text-align: center;
+    padding: 1%;
 }
 
 h2{
     font-family: 'Designer', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 80px;
     text-align: center;
+    padding: 0.5%;
 }
 
 img{
@@ -65,6 +61,7 @@ img{
     margin-right: auto;
     width: 40%;
     height: 40%;
+    padding: 1%;
 }
 
 nav ul {
@@ -75,13 +72,14 @@ nav ul {
     background-color: #8758ffff;
     display: flex;
     justify-content: center;
+    margin: 1% !important;
   }
   
   nav ul li {
     float: left;
     font-size: 100%;
     width: 16%;
-  }
+  } 
   
   nav ul li a {
     display: block;
@@ -99,4 +97,5 @@ nav ul {
     text-align: center;
     font-family: 'Creato', 'Courier New', Courier, monospace;
     font-size: 20px;
+    padding: 2%;
   }
