@@ -12,9 +12,8 @@ mi atracción es un misterio sin fin.
 ¿Qué soy que no se puede ver,
 pero mi presencia se puede sentir,
 con mi gravedad extrema y voraz,
-soy un enigma del universo sin fin?
+soy un enigma del universo sin fin?*/
 
-*/
 @font-face {
     font-family: 'Space Rave';
     src: url(fonts/Space\ Rave.ttf);
@@ -117,9 +116,10 @@ h3{
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 50px;
     max-width: 800px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .item {
@@ -130,8 +130,4 @@ h3{
 .img img {
     width: 100%;
     height: auto;
-}
-
-.texto {
-    text-align: justify;
 }
