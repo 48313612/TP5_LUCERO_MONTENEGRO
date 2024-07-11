@@ -17,4 +17,18 @@ public class HomeController : Controller
     {
         return View();
     }
+    public IActionResult Tutorial()
+    {
+        return View();
+    }
+
+    public IActionResult Juego()
+    {
+        return View();
+    }
+
+    public IActionResult Creditos()
+    {
+        return View();
+    }
 }
