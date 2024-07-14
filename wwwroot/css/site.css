@@ -31,12 +31,15 @@ soy un enigma del universo sin fin?*/
 
 .body, footer{
     background-color: #98bae7ff;
+    width: 100%;
+    height: auto;
 }
 h1{
     font-family: 'Space Rave', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 110px;
     text-align: center;
     padding: 1%;
+    color:  #1c1678ff !important;
 }
 
 h2{
@@ -44,6 +47,7 @@ h2{
     font-size: 80px;
     text-align: center;
     padding: 0.5%;
+    color: #5cb8e4ff !important;
 }
 
 img{
@@ -90,19 +94,20 @@ nav ul li a {
     text-decoration: none;
 }
 .active{
-    font-weight: bold;
+    background-color: #5cb8e4ff;
 }
 footer{
     text-align: center;
     font-family: 'Creato Display', 'Courier New', Courier, monospace;
     font-size: 20px;
-    padding: 2%;
+    padding: 4%;
 }
 p{
     font-family: 'Creato Display', 'Courier New', Courier, monospace;   
     margin: 1% !important;
     padding: auto;
     font-size: 20px;
+    text-align: center;
 }
 
 h3{
@@ -116,18 +121,17 @@ h3{
 .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
-    max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto !important;
     text-align: center;
+    row-gap: 0.5%;
 }
 
 .item {
-    border: 2px solid black;
-    padding: 20px;
+    border: none;
+    padding: 2%;
 }
 
-.img img {
+.img {
     width: 100%;
     height: auto;
 }
