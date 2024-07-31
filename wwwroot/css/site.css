@@ -47,7 +47,7 @@ h2{
     font-size: 80px;
     text-align: center;
     padding: 0.5%;
-    color: #5cb8e4ff !important;
+    color: #8758ffff !important;
 }
 
 img{
@@ -88,7 +88,7 @@ nav ul li a {
     display: block;
     font-family: 'Creato Display', 'Courier New', Courier, monospace;
     font-size: 100%;
-    color: #a3ffd6ff;
+    color: #1c1678ff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -105,9 +105,10 @@ footer{
 p{
     font-family: 'Creato Display', 'Courier New', Courier, monospace;   
     margin: 1% !important;
-    padding: auto;
+    padding: 1%;
+    color: #1c1678ff;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 h3{
