@@ -4,7 +4,14 @@
 <section class = "body">
 <img src = "~/img/header.png">
 <h1>Inicio de Juego</h1>
-
+<nav>
+<ul>
+  <li><a  href='@Url.Action("Index", "Home")'>Home</a></li>
+  <li><a href='@Url.Action("Tutorial", "Home")'>Tutorial</a></li>
+  <li><a class ="active" href='@Url.Action("Juego", "Home")'>Inicio del juego</a></li>
+  <li><a href='@Url.Action("Creditos", "Home")'>Créditos</a></li>
+</ul>
+</nav>
 <p> En un rincón lejano de nuestra galaxia, una catástrofe cósmica se cierne sobre todo lo que conocemos. Un agujero negro ha comenzado a formarse, amenazando con devorar estrellas, planetas y la vida misma. En medio de este caos, una leyenda antigua resurge: se dice que una civilización avanzada, que desapareció hace milenios, dejó atrás un artefacto con el poder de desactivar este tipo de fenómenos. 
 Sin embargo, el paradero del artefacto se perdió en el tiempo, y con él, la única esperanza de salvar la galaxia.</p>
 <p> Entra la tripulación de la nave espacial "Vega", un grupo de exploradores con una misión: encontrar y activar el artefacto antes de que sea demasiado tarde. Guiados por las escasas pistas dejadas por los antiguos, 
@@ -14,5 +21,8 @@ Solo aquellos con el ingenio y la valentía suficientes podrán desentrañar est
 <p> A medida que los exploradores avanzan a través de la nave y los restos de la antigua civilización, descubren más sobre los motivos de estos seres y la importancia del artefacto. Con el destino de la galaxia pendiendo de un hilo, la tripulación 
 de la "Vega" debe enfrentarse a sus propios miedos y dudas, confiando en sus habilidades y en su capacidad para trabajar en equipo.</p>
 <p> Ahora, con el reloj avanzando y el agujero negro creciendo, el destino de millones de vidas depende de ellos. ¿Podrán los héroes de la "Vega" desactivar el agujero negro y salvar la galaxia? 
-La respuesta se encuentra en el corazón de esta aventura, donde el pasado y el futuro se encuentran, y donde la historia de "Rescate Galáctico: Misión Vega" será escrita </p>
+La respuesta se encuentra en el corazón de esta aventura, donde el pasado y el futuro se encuentran, y donde la historia de "Rescate Galáctico: Misión Vega" será escrita. </p>
+  <form method="post" action='@Url.Action("Habitacion1")'> 
+  <input type= "submit" value = "Comenzar misión">
+  </form>
 </section>

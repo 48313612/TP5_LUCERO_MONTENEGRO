@@ -137,3 +137,18 @@ h3{
     width: 100%;
     height: auto;
 }
+
+input[type=submit]
+{
+  color: #1c1678ff;
+  font-family: 'Creato Display', 'Courier New', Courier, monospace;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  padding: 1%;
+  margin-top: 1%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #8758ffff ;
+}
