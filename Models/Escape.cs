@@ -7,36 +7,43 @@ namespace TP5_LUCERO_MONTENEGRO.Models
 {
     public class Escape
     {
-        static private List<string> incognitasSalas = new List<string>() {"2198", "186", "16", "11", "espacio"};
+        static private List<string> incognitasSalas;
         static private int estadoDeJuego = 1;
 
     private static void InicializarJuego() 
     {
-
+      incognitasSalas = new List<string>() {"2198", "186", "16", "11", "espacio"};
     }
   public static int GetEstadoJuego() 
   {
     return estadoDeJuego;
   }
- public static bool ResolverSala(int Sala, string Incognita)
- {
+    public static bool ResolverSala(int Sala, string Incognita)
+    {
   estadoDeJuego = GetEstadoJuego();
   bool puedeResolver = false;
-  int x = 0;
-  bool resolvio = false;
-      if(Sala == estadoDeJuego)
-      {
-        puedeResolver = true;
-      }
-      while(x < incognitasSalas.Count && !resolvio)
-      {
-        if(Incognita == incognitasSalas[x])
+
+      if (incognitasSalas == null)
         {
-          resolvio = true;
+            InicializarJuego();
+        }
+      else if(Sala == estadoDeJuego)
+        { 
+        puedeResolver = true;
+        }
+      
+      if(Incognita == incognitasSalas[Sala - 1] && puedeResolver)
+        {
+          puedeResolver = true;
           estadoDeJuego++; //prerguntar array incognitas correctas
         }
+      else
+      {
+        puedeResolver = false;
       }
-      return resolvio; // que bool debe retornar
+    return puedeResolver;
+  }
+     
  }
+
     }
-}
