@@ -32,8 +32,16 @@ public class HomeController : Controller
         return View();
     }
 
-      public IActionResult Habitacion1()
+     public IActionResult Comenzar()
     {
+        int estadoDeJuego = Escape.GetEstadoJuego();
+        //como retorna view de cada sala
+        return View();
+    }
+
+    public IActionResult Habitacion(int Sala, string Incognita)
+    {
+        
         return View();
     }
 
