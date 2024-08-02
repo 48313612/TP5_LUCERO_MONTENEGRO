@@ -40,7 +40,7 @@ public class HomeController : Controller
 
     public IActionResult Habitacion(int Sala, string Incognita)
     {
-        //resolver sala?
+        
         return View();
     }
 

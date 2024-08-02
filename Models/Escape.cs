@@ -32,7 +32,7 @@ namespace TP5_LUCERO_MONTENEGRO.Models
         puedeResolver = true;
         }
       
-      if(Incognita == incognitasSalas[Sala - 1] && puedeResolver)
+      if (Incognita == incognitasSalas[Sala - 1] && puedeResolver)
         {
           puedeResolver = true;
           estadoDeJuego++; //prerguntar array incognitas correctas
