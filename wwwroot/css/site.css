@@ -152,3 +152,11 @@ input[type=submit]
   margin-right: auto;
   background-color: #8758ffff ;
 }
+
+.bodyH {
+    background-image: url(~/img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 80%;
+}

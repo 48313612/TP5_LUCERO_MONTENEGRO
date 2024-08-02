@@ -31,4 +31,10 @@ public class HomeController : Controller
     {
         return View();
     }
+
+      public IActionResult Habitacion1()
+    {
+        return View();
+    }
+
 }
