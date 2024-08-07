@@ -14,34 +14,25 @@ namespace TP5_LUCERO_MONTENEGRO.Models
     {
       incognitasSalas = new List<string>() {"2198", "186", "16", "11", "espacio"};
     }
-  public static int GetEstadoJuego() 
+    public static int GetEstadoJuego() 
   {
     return estadoDeJuego;
   }
-    public static bool ResolverSala(int Sala, string Incognita)
+    public static bool ResolverSala(int Sala, string Incognita, bool salaCorrecta)
     {
-  estadoDeJuego = GetEstadoJuego();
-  bool puedeResolver = false;
+      estadoDeJuego = GetEstadoJuego();
+      bool resolvio = false;
 
       if (incognitasSalas == null)
         {
             InicializarJuego();
         }
-      else if(Sala == estadoDeJuego)
-        { 
-        puedeResolver = true;
-        }
-      
-      if (Incognita == incognitasSalas[Sala - 1] && puedeResolver)
+      else if (Incognita == incognitasSalas[Sala - 1] && salaCorrecta == true)
         {
-          puedeResolver = true;
-          estadoDeJuego++; //prerguntar array incognitas correctas
+          resolvio = true;
+          estadoDeJuego++;
         }
-      else
-      {
-        puedeResolver = false;
-      }
-    return puedeResolver;
+    return resolvio;
   }
      
  }

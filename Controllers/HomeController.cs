@@ -40,8 +40,28 @@ public class HomeController : Controller
 
     public IActionResult Habitacion(int Sala, string Incognita)
     {
-        
-        return View();
+        bool salaCorrecta = false;
+        int estadoDeJuego = Escape.GetEstadoJuego();
+        if(Sala == estadoDeJuego)
+        {
+            salaCorrecta = true;
+        }
+        else
+        {
+            return RedirectToAction($"Habitacion{estadoDeJuego}");
+        }
+
+        bool resolvio = Escape.ResolverSala(Sala, Incognita, salaCorrecta);
+        if(!resolvio)
+        {
+            ViewBag.Error = "Respuesta incorrecta. Vuelva a intentar otra vez";
+            return RedirectToAction($"Habitacion{estadoDeJuego}");
+        }
+        else
+        {        
+        return View($"Habitacion{estadoDeJuego}");
+        }
+
     }
 
 }

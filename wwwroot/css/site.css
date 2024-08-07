@@ -29,7 +29,7 @@ soy un enigma del universo sin fin?*/
     src: url(fonts/CreatoDisplay-ExtraBold.otf);
 }
 
-.body, footer{
+.body{
     background-color: #98bae7ff;
     width: 100%;
     height: auto;
