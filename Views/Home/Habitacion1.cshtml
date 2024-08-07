@@ -2,13 +2,51 @@
     ViewData["Title"] = "Habitacion 1";
 }
 <section class = "bodyH">
-<h1> PUENTE DE LA NAVE </h1>
-<p> Jugadores, se encuentran en el puente de la nave. Para pasar a la siguiente sala, deberán descifrar un código de números que el capitán puso para resguardar la seguridad de la nave.</p>
+<h1 class = "salaH"> PUENTE DE LA NAVE </h1>
+<p class = "pH"> Jugadores, se encuentran en el puente de la nave. Para pasar a la siguiente sala, deberán descifrar un código de números que el capitán puso para resguardar la seguridad de la nave.</p>
 
 
+<a href="https://lasupernovavega.netlify.app/" target="_blank">LA SUPERNOVA VEGA</a>
 
-  <form method="post" action='@Url.Action("Habitacion2")'> 
-  <input type="number">
+<div class="diary">
+        <input type="checkbox" id="toggle" class="toggle-checkbox">
+        <label for="toggle" class="toggle-label">
+            <div class="diary-cover">
+            <p> TAPA </p>
+            </div>
+        </label>
+        <div class="image-container">
+            <img src="~/img/DIARIO CAPITÁN DAILY.png" alt="Imagen">
+        </div>
+
+<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        <h2> Pista #1 </h2>
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+      <p> La contraseña la estableció el Capitán Daily a partir del día que nació su hijo...</p>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        <h2> Pista #2 </h2>
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+       <p> Su hijo nació ... años después de que la supernova Vega explotara </p>
+      </div>
+    </div>
+  </div>
+
+  <form method="post" action = "Habitacion"> 
+  <input type="number" min = 1>
   <input type= "submit" value = "Validar">
   </form>
 </section>
