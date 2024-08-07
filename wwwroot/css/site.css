@@ -154,7 +154,7 @@ input[type=submit]
 }
 
 .bodyH {
-    background-image: url('~/img/fondo.jpg') !important;
+    background-image: url('../img/fondo.jpg') !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
