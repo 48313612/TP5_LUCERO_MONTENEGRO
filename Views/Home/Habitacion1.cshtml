@@ -5,9 +5,17 @@
 <p class = "pH"> @ViewBag.Error </p>
 <h1 class = "salaH"> PUENTE DE LA NAVE </h1>
 <p class = "pH"> Jugadores, se encuentran en el puente de la nave. Para pasar a la siguiente sala, deberán descifrar un código de números que el capitán puso para resguardar la seguridad de la nave.</p>
-
-<div class="container">
-        <a href="#image1" class="open-button"><img src = "~/img/Tapa diario.png"></a>
+  <div class="content-wrapper">
+        <div class="news-image">
+            <a href="https://lasupernovavega.netlify.app/" target="_blank">
+                <img src="~/img/NOTICIAS.png" alt="Noticias">
+            </a>
+        </div>
+        <div class="newspaper-container">
+            <a href="#image1" class="open-button">
+                <img src="~/img/Tapa diario.png" alt="Tapa Diario">
+            </a>
+        </div>
     </div>
 
     <div id="image1" class="image-container">
@@ -15,17 +23,12 @@
         <img src="~/img/DIARIO CAPITÁN DAILY.png" alt="Imagen">
     </div>
 
-<div class = "imagen">
-<a href="https://lasupernovavega.netlify.app/"> 
-<img src = "~/img/NOTICIAS.png" target="_blank"> 
-</a>
-</div>
-
-<button onclick="alert('Pista 1: La contraseña la estableció el Capitán Daily a partir del día que nació su hijo...')"> Pista 1 </button>
-<button onclick="alert('Pista 2: Su hijo nació ... años después de que la supernova Vega explotara')"> Pista 2 </button>
-
-  <form method="post" action = "Habitacion"> 
-  <input type="number" min = 1>
-  <input type= "submit" value = "Validar">
-  </form>
+    <div class="buttons-wrapper">
+        <button onclick="alert('Pista 1: La contraseña la estableció el Capitán Daily a partir del día que nació su hijo...')">Pista 1</button>
+        <button onclick="alert('Pista 2: Su hijo nació ... años después de que la supernova Vega explotara')">Pista 2</button>
+        <form method="post" action="Habitacion"> 
+            <input type="number" min="1">
+            <input type="submit" value="Validar">
+        </form>
+    </div>
 </section>
