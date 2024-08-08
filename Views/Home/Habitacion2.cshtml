@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Habitacion 2";
+}
+
+<section class = "bodyH">
+<p class = "pH"> @ViewBag.Error </p>
+<h1 class = "salaH"> LABORATORIO DE LA NAVE </h1>
+<p class = "pH"> Jugadores, han pasado al laboratorio de la nave. Para pasar a la siguiente sala, deberán descifrar un código de números que los científicos de la naven han establecido para proteger sus experimentos. La combinación correcta es la clave para el siguiente paso.</p>
+ <div class = "notas">   
+    <img src = "~/img/Nota Hidrogeno-Photoroom.png">
+    <img src = "~/img/Nota Oxígeno-Photoroom.png">
+    <img src = "~/img/Nota Carbono-Photoroom.png">
+ </div> 
+
+ <img src = "~/img/tabla periodica.png">
+
+    <div class="buttons-wrapper">
+        <button onclick="alert('Pista 1: La contraseña la estableció el Capitán Daily a partir del día que nació su hijo...')">Pista 1</button>
+        <button onclick="alert('Pista 2: Su hijo nació ... años después de que la supernova Vega explotara')">Pista 2</button>
+        <form method="post" action="Habitacion"> 
+            <input type="number" min="1">
+            <input type="submit" value="Validar">
+        </form>
+    </div>
+</section>

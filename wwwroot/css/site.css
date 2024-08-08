@@ -288,3 +288,9 @@ button{
   box-sizing: border-box;
   background-color: #8758ffff ;
 }
+
+.notas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
