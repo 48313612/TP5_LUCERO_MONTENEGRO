@@ -153,33 +153,37 @@ input[type=submit]
   background-color: #8758ffff ;
 }
 
+input[type=number]
+{
+  clear: both;
+  color: #1c1678ff;
+  font-family: 'Creato Display', 'Courier New', Courier, monospace;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  padding: 1%;
+  margin-top: 1%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #8758ffff ;
+}
+
 .bodyH {
-    background-image: url('../img/fondo.jpg') !important;
+    background-image: url('../img/sala1.png') !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0 !important;
     padding: 0 !important;
     width: 100%;
-    height: 110vh;
-}
-
-.accordion{
-    border: 0px !important;
-    width: 50%;
-    margin: 0 auto;
-}
-
- a{
-    text-decoration: none !important;
-    color: #98bae7ff !important;
-    font-family: 'Creato Display';
-    font-style: italic;
+    height: 100%;
 }
 
 .container {
-    text-align: center;
-    margin-top: 50px;
+    float: right;
+    width: 50%;
+    height: auto;
 }
 
 .image-container {
@@ -190,8 +194,8 @@ input[type=submit]
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.5s ease;
@@ -234,4 +238,25 @@ input[type=submit]
     color: #5cb8e4ff;
     font-size: 20px;
     text-align: left;
+}
+
+.imagen{
+    width: 60%;
+    height: 40%;
+    float: left;
+}
+
+.imagen:hover{
+    cursor: pointer;
+}
+
+button{
+  clear: both;
+  color: #1c1678ff;
+  font-family: 'Creato Display', 'Courier New', Courier, monospace;
+  font-size: 20px;
+  border-radius: 100px;
+  padding: 1%;
+  margin-top: 1%;
+  background-color: #8758ffff ;
 }

@@ -58,8 +58,9 @@ public class HomeController : Controller
             return RedirectToAction($"Habitacion{estadoDeJuego}");
         }
         else
-        {        
-        return View($"Habitacion{estadoDeJuego}");
+        {       
+             ViewBag.Error = "";
+            return View($"Habitacion{estadoDeJuego}");
         }
 
     }
