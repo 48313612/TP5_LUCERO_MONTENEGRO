@@ -34,6 +34,7 @@ public class HomeController : Controller
 
      public IActionResult Comenzar()
     {
+
         int estadoDeJuego = Escape.GetEstadoJuego();
         return View($"Habitacion{estadoDeJuego}");
     }
