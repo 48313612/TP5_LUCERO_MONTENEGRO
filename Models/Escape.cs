@@ -7,12 +7,12 @@ namespace TP5_LUCERO_MONTENEGRO.Models
 {
     public class Escape
     {
-        static private List<string> incognitasSalas;
+        static public List<string> incognitasSalas;
         static private int estadoDeJuego = 1;
 
     public static void InicializarJuego() 
     {
-      incognitasSalas = new List<string>() {"2198", "186", "16", "espacio"};
+      incognitasSalas = new List<string>() {"2198", "186", "16", "11", "espacio"};
     }
     public static int GetEstadoJuego() 
   {

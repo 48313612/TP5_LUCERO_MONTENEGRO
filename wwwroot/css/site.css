@@ -2,17 +2,7 @@
 --picton-blue: #5cb8e4ff;
 --medium-slate-blue: #8758ffff;
 --jordy-blue: #98bae7ff;
---aquamarine: #a3ffd6ff;
-
-En el espacio profundo me encuentro,
-sin luz ni forma visible soy.
-Devoro todo sin dejar rastro,
-mi atracción es un misterio sin fin.
-
-¿Qué soy que no se puede ver,
-pero mi presencia se puede sentir,
-con mi gravedad extrema y voraz,
-soy un enigma del universo sin fin?*/
+--aquamarine: #a3ffd6ff; */
 
 @font-face {
     font-family: 'Space Rave';
@@ -170,13 +160,24 @@ input[type=text]
 }
 
 .bodyH {
-    background-image: url('../img/sala1.png') !important;
+    background-image: url('../img/sala nave.png') !important;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 !important;
     padding: 0 !important;
-    width: 100%;
-    height: 110vh;
+    width: 100% !important;
+    height: 150vh !important;
+}
+
+
+.bodyH2 {
+    background-image: url('../img/laboratorio nave.png') !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: 150vh !important;
 }
 
 .container {
@@ -259,12 +260,18 @@ input[type=text]
     padding: 1%;
     color:  #5cb8e4ff!important;
 }
+
+/*--midnight-blue: #1c1678ff;
+--picton-blue: #5cb8e4ff;
+--medium-slate-blue: #8758ffff;
+--jordy-blue: #98bae7ff;
+--aquamarine: #a3ffd6ff; */
 .pH{
     font-family: 'Creato Display', 'Courier New', Courier, monospace;   
     margin: 1% !important;
     padding: 1%;
-    background-color: black;
     color: #5cb8e4ff;
+    
     font-size: 20px;
     text-align: left;
 }

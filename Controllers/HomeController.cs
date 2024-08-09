@@ -61,7 +61,16 @@ public class HomeController : Controller
         else
         {       
             estadoDeJuego = Escape.GetEstadoJuego();
-            return View($"Habitacion{estadoDeJuego}");
+            if (estadoDeJuego <= (Escape.incognitasSalas).Count)
+            {
+                return View($"Habitacion{estadoDeJuego}");
+            }
+        else
+            {
+                return View("Victoria");
+            }
+            
+            
         }
 
     }
