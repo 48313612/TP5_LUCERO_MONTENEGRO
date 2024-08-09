@@ -145,7 +145,7 @@ input[type=submit]
   font-size: 20px;
   border-radius: 10px;
   border: none;
-  padding: 3% !important;
+  padding: 1% !important;
   margin-top: 2%;
   display: flex;
   margin-left: auto;
@@ -263,6 +263,7 @@ input[type=text]
     font-family: 'Creato Display', 'Courier New', Courier, monospace;   
     margin: 1% !important;
     padding: 1%;
+    background-color: black;
     color: #5cb8e4ff;
     font-size: 20px;
     text-align: left;
@@ -293,4 +294,5 @@ button{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 80%;
 }

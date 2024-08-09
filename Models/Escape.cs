@@ -10,9 +10,9 @@ namespace TP5_LUCERO_MONTENEGRO.Models
         static private List<string> incognitasSalas;
         static private int estadoDeJuego = 1;
 
-    private static void InicializarJuego() 
+    public static void InicializarJuego() 
     {
-      incognitasSalas = new List<string>() {"2198", "186", "16", "11", "espacio"};
+      incognitasSalas = new List<string>() {"2198", "186", "16", "espacio"};
     }
     public static int GetEstadoJuego() 
   {
@@ -27,7 +27,8 @@ namespace TP5_LUCERO_MONTENEGRO.Models
         {
             InicializarJuego();
         }
-      else if (Incognita == incognitasSalas[Sala - 1] && salaCorrecta == true)
+      
+      if (Incognita == incognitasSalas[Sala - 1] && salaCorrecta == true)
         {
           resolvio = true;
           estadoDeJuego++;

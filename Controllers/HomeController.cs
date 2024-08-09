@@ -34,7 +34,7 @@ public class HomeController : Controller
 
      public IActionResult Comenzar()
     {
-
+        Escape.InicializarJuego();
         int estadoDeJuego = Escape.GetEstadoJuego();
         return View($"Habitacion{estadoDeJuego}");
     }
@@ -49,18 +49,18 @@ public class HomeController : Controller
         }
         else
         {
-            return RedirectToAction($"Habitacion{estadoDeJuego}");
+            return View($"Habitacion{estadoDeJuego}");
         }
 
         bool resolvio = Escape.ResolverSala(Sala, Incognita, salaCorrecta);
         if(!resolvio)
         {
             ViewBag.Error = "Respuesta incorrecta. Vuelva a intentar otra vez";
-            return RedirectToAction($"Habitacion{estadoDeJuego}");
+            return View($"Habitacion{estadoDeJuego}");
         }
         else
         {       
-             ViewBag.Error = "";
+            estadoDeJuego = Escape.GetEstadoJuego();
             return View($"Habitacion{estadoDeJuego}");
         }
 
