@@ -28,7 +28,7 @@ namespace TP5_LUCERO_MONTENEGRO.Models
             InicializarJuego();
         }
       
-      if (Incognita == incognitasSalas[Sala - 1] && salaCorrecta == true)
+      if (Incognita.ToLower() == incognitasSalas[Sala - 1] && salaCorrecta == true)
         {
           resolvio = true;
           estadoDeJuego++;
