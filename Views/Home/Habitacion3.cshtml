@@ -18,7 +18,7 @@
         <button onclick="alert('Pista 1: ¿Cuál es el orden de los planetas en el sistema solar?')">Pista 1</button>
         <button onclick="alert('Pista 2: Cada uno representa un número')">Pista 2</button>
          <form method="post" action='@Url.Action("Habitacion")'> 
-            <input type="text" name = Incognita>
+            <input type="text" name = Incognita required>
             <input type="hidden" name="Sala" value= "3">
             <input type="submit" value="Validar">
         </form>

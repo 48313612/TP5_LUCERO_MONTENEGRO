@@ -27,7 +27,7 @@
         <button onclick="alert('Pista 1: La contraseña la estableció el Capitán Daily a partir del día que nació su hijo...')">Pista 1</button>
         <button onclick="alert('Pista 2: Su hijo nació ... años después de que la supernova Vega explotara')">Pista 2</button>
         <form method="post" action='@Url.Action("Habitacion")'> 
-            <input type="text" name = Incognita>
+            <input type="text" name = Incognita required>
             <input type="hidden" name="Sala" value= "1">
             <input type="submit" value="Validar">
         </form>
