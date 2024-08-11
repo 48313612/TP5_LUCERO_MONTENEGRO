@@ -111,21 +111,15 @@ h3{
     text-align: center;
 }
 
-.containerTuto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    text-align: center;
-    row-gap: 0.5%;
+.text{
+  float: left;
+  width: 50%;
 }
-
-.item {
-    border: none;
-    padding: 2%;
-}
-
-.img {
-    width: 100%;
-    height: auto;
+.item img{
+  clear: both;
+  float: right;
+  width: 50%;
+  height: 20%;
 }
 
 input[type=submit]
@@ -253,6 +247,7 @@ input[type=text]
 }
 
 .buttons-wrapper {
+    clear: both;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -957,9 +952,9 @@ button{
   }
   }
   
-  .contenedor div{
+  .contenedor {
     float: left;
-    width: 100%;
+    width: 50%;
     height: auto;
   }
   .contendor h3{
