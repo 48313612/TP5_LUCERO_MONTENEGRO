@@ -12,7 +12,7 @@ namespace TP5_LUCERO_MONTENEGRO.Models
 
     public static void InicializarJuego() 
     {
-      incognitasSalas = new List<string>() {"2198", "186", "16", "11", "espacio"};
+      incognitasSalas = new List<string>() {"2198", "186", "1611", "espacio"};
     }
     public static int GetEstadoJuego() 
   {

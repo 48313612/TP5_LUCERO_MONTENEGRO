@@ -130,6 +130,7 @@ h3{
 
 input[type=submit]
 {
+  clear: both;
   color: #1c1678ff;
   font-family: 'Creato Display', 'Courier New', Courier, monospace;
   font-size: 20px;
@@ -178,6 +179,16 @@ input[type=text]
     padding: 0 !important;
     width: 100% !important;
     height: 400vh !important;
+}
+
+.bodyH3 {
+  background-image: url('../img/img c.png') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 400vh !important;
 }
 
 .container {
@@ -946,3 +957,16 @@ button{
   }
   }
   
+  .contenedor div{
+    float: left;
+    width: 100%;
+    height: auto;
+  }
+  .contendor h3{
+    font-family: 'Space Rave', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 100px;
+    text-align: left;
+    padding: 1%;
+    color:  #5cb8e4ff!important;
+    text-shadow: 1px 1px 2px #1c1678ff, 0 0 1em blue, 0 0 0.2em blue;
+  }
