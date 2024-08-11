@@ -93,6 +93,7 @@ footer{
     padding: 4%;
     clear: both;
 }
+
 p{
     font-family: 'Creato Display', 'Courier New', Courier, monospace;   
     margin: 1% !important;
@@ -112,13 +113,30 @@ h3{
 }
 
 .text{
+  clear: both;
   float: left;
   width: 50%;
 }
-.item img{
-  clear: both;
+
+.text2{
   float: right;
   width: 50%;
+}
+.item{
+  margin-right: 4%;
+  margin-top: 2%;
+  float: right;
+  width: 40%;
+  height: 20%;
+}
+
+.item2{
+  margin-left: 4%;
+  margin-top: 2%;
+  margin-bottom: 0%;
+  clear: both;
+  float: left;
+  width: 40%;
   height: 20%;
 }
 
