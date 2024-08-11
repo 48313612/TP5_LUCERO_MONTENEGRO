@@ -1,4 +1,18 @@
 @{
     ViewData["Title"] = "Habitacion 4";
 }
+<section class = "bodyH4">
+<h1 class = "salaH"> SALA DEL ARTEFACTO </h1>
+<p class = "pH"> Jugadores, ya se encuentran en la última sala: la sala del artefacto. Para lograr salvar finalmente su galaxia, deberan desactivar el dispositivo, cuyo código, destruiría el agujero negro. Para lograrlo, deberán decifrar una palabra a partir de una inscripción en un idioma antiguo. Deberan usar la siguiente tabla de traducción para decifrar el código. ¡Mucha suerte!</p>
 
+<div class="buttons-wrapper">
+        <button onclick="alert('Pista 1: Préstale atención a la forma de las letras de la inscripción...')">Pista 1</button>
+        <button onclick="alert('Pista 2: contengo a los planetas...')">Pista 2</button>
+         <form method="post" action='@Url.Action("Habitacion")'> 
+            <input type="text" name = Incognita>
+            <input type="hidden" name="Sala" value= "4">
+            <input type="submit" value="Validar">
+        </form>
+    </div>
+<p class = "pH"> @ViewBag.Error </p>
+</section>

@@ -191,6 +191,26 @@ input[type=text]
   height: 400vh !important;
 }
 
+.bodyH4{
+  background-image: url('../img/img d.png') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 400vh !important;
+}
+
+.bodyVictoria{
+  background-image: url('../img/img d.png') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  height: 400vh !important;
+}
+
 .container {
     float: right;
     width: 50%;
