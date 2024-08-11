@@ -202,13 +202,13 @@ input[type=text]
 }
 
 .bodyVictoria{
-  background-image: url('../img/img d.png') !important;
+  background-image: url('../img/victoria.png') !important;
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 !important;
   padding: 0 !important;
   width: 100% !important;
-  height: 400vh !important;
+  height: 200vh !important;
 }
 
 .container {
