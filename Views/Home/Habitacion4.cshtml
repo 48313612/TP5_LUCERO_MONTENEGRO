@@ -3,65 +3,31 @@
 }
 <section class = "bodyH4">
 <h1 class = "salaH"> SALA DEL ARTEFACTO </h1>
-<p class = "pH"> Jugadores, ya se encuentran en la última sala: la sala del artefacto. Para lograr salvar finalmente su galaxia, deberan desactivar el dispositivo, cuyo código, destruiría el agujero negro. Para lograrlo, deberán decifrar una palabra a partir de una inscripción en un idioma antiguo. Deberan usar la siguiente tabla de traducción para decifrar el código. ¡Mucha suerte!</p>
+<p class = "pH"> Jugadores, ya se encuentran en la última sala: la sala del artefacto. 
+    Para lograr salvar finalmente su galaxia, deberan desactivar el dispositivo que destruiría el agujero negro. 
+    Para hacerlo, deberán decifrar una palabra a partir de una inscripción codificada según la siguiente tabla. 
+    Deberan usarla e ingresarla en el formulario en cuestión. ¡Mucha suerte!</p>
 
-<p class = "acertijo"> אני בכל מקום, אי אפשר לראות אותי, אבל בלעדיי אין כלום. מה אני? </p>
-<table>
-  <tr>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
-    <th>4</th>
-    <th>5</th>
-    <th>6</th>
-    <th>7</th>
-    <th>8/th>
-    <th>9</th>
-    <th>10</th>
-    <th>11</th>
-    <th>12</th>
-    <th>13</th>
-    <th>14</th>
-    <th>15</th>
-    <th>16</th>
-    <th>17</th>
-    <th>18</th>
-    <th>19</th>
-    <th>20</th>
-  </tr>
-  <tr>
-    <td>A</td>
-    <td>B</td>
-    <td>C</td>
-    <th>D</th>
-    <th>E</th>
-    <th>F</th>
-    <th>G</th>
-    <th>H</th>
-    <th>I</th>
-    <th>J</th>
-    <th>K</th>
-    <th>L</th>
-    <th>M</th>
-    <th>N</th>
-    <th>Ñ</th>
-    <th>O</th>
-    <th>P</th>
-    <th>Q</th>
-    <th>R</th>
-    <th>S</th>
-    <th>T</th>
-    <th>U</th>
-    <th>V</th>
-    <th>W</th>
-    <th>X</th>
-    <th>Y</th>
-    <th>Z</th>
-  </tr>
-</table>
+<p class = "acertijo"> 5-20-21-16-26 
+5-14
+21-16-4-1-20
+17-1-19-21-5-20
+26
+14-16
+20-5
+13-5
+23-5
+17-5-19-16
+20-9-14
+13-9
+14-16
+8-1-26
+14-1-4-1 </p>
+
+<img class = "tablaNum" src = "~/img/tablaNum.png">
 
 <div class="buttons-wrapper">
-        <button onclick="alert('Pista 1: Préstale atención a la forma de las letras de la inscripción...')">Pista 1</button>
+        <button onclick="alert('Pista 1: ...')">Pista 1</button>
         <button onclick="alert('Pista 2: Se trata de una única palabra...')">Pista 2</button>
          <form method="post" action='@Url.Action("Habitacion")'> 
             <input type="text" name = Incognita required>

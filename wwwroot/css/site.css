@@ -1014,3 +1014,8 @@ button{
   margin-right: auto;
   text-align: center;
 }
+
+.tablaNum {
+  width: 30%;
+  height: auto;
+}
