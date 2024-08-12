@@ -34,8 +34,6 @@ namespace TP5_LUCERO_MONTENEGRO.Models
           estadoDeJuego++;
         }
     return resolvio;
-  }
-     
+  }  
  }
-
-    }
+}
