@@ -6,17 +6,17 @@
 
 @font-face {
     font-family: 'Space Rave';
-    src: url(fonts/Space\ Rave.ttf);
+    src: url("../fonts/Space\ Rave.ttf");
 }
 
 @font-face {
     font-family: 'Designer';
-    src: url(fonts/Designer.otf);
+    src: url("../fonts/Designer.otf");
 }
 
 @font-face {
     font-family: 'Creato Display';
-    src: url(fonts/CreatoDisplay-ExtraBold.otf);
+    src: url("../fonts/CreatoDisplay-ExtraBold.otf");
 }
 
 .body1{
